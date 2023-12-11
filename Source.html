@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Crimson+Text&family=EB+Garamond:wght@500&family=Libre+Baskerville&family=Merriweather&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="navbar">
+        <img src="Logo.png" alt="" height="70vh" width="70vw" id="Logo">
+        <h2 style="font-family: 'Belanosima', sans-serif;">R-weather</h2>
+        <div class="searchbar">
+            <input id="Searchbox" type="text" placeholder="Search City Name">
+            <img id="Search" src="Search.png" alt="" height="40px" width="40px" style="cursor: pointer;">
+        </div>
+    </nav>
+    <div class="invalid_ki_info">Please Enter a Valid City Name !</div>
+    <section id="Section-1">
+        <div class="weather">
+            <img id="weatherphoto" src="ClearWeatherMain2.webp" alt="">
+        </div>
+        <div class="overlay"></div>
+        <div class="weathercontent">
+            <h2 style="font-size: 42px; font-family: 'Libre Baskerville', serif;" id="city">New York</h2>
+            <div class="line1">
+                <img id="weatherpng" src="ClearWeather.png" alt="">
+                <h3 class="temperature" style="font-size: 33px;">35°C</h3>
+                <div>
+                    <h3 id="weatherdesc" style="font-family: 'Libre Baskerville', serif;">Mostly Sunny</h3>
+                    <span style="display: block; text-align: center;">Feels like <span class="feels">40°C</span></span>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="box">Pressure : <span id="pressure">1000</span>mb</div>
+                <div class="box">Humidity : <span class="humidity">59%</span></div>
+                <div class="box">Visibility : <span id="visibility">10000</span>m</div>
+                <div class="box">Longitude : <span id="longitude">75.91°</span></div>
+                <div class="box">Latitude : <span id="latitude">34.41°</span></div>
+            </div>
+        </div>
+    </section>
+    <section id="Section-2">
+        <div class="card">
+            <h2>Temperature</h2>
+            <h3 class="temperature">35°C</h3>
+            <div>
+                <p>Temperature is <span class="temperature">35°C</span></p>
+                <p>Min Temperature is <span id="MinTemp">25°C</span></p>
+                <p>Max Temperature is <span class="MaxTemp">35°C</span></p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Humidity Info</h2>
+            <h3 class="humidity">59%</h3>
+            <div>
+                <p>Feels Like <span class="feels">40°C</span></p>
+                <p>Humidity is <span class="humidity">59%</span></p>
+                <p>Max Temperature is <span class="MaxTemp">35°C</span></p>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Wind Info</h2>
+            <h3 class="wind">2.57Km/h</h3>
+            <div>
+                <p>Wind Speed is <span class="wind">2.57Km/h</span></p>
+                <p>Sunset Time is <span id="sunset">9874646363s</span></p>
+                <p>Sunrise Time is <span id="sunrise">1674646363s</span></p>
+            </div>
+        </div>
+    </section>
+    <div style="color: white; margin-top: 10px; letter-spacing: 5px; background-color: rgb(29, 26, 26); display: flex;justify-content: center; align-items: center;" id="copyright">@2022 | All Rights Reserved | Designed By Rajbir Thakur</div>
+    <script src="Brain.js"></script>
+</body>
+</html>

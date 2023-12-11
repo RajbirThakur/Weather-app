@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#navbar{
+    height: 12vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(199, 197, 197);
+    display: flex;
+    align-items: center;
+}
+#Logo{
+    margin-left: 10vw;
+}
+.searchbar{
+    height: 10vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    margin-left: 5vw;
+}
+.searchbar input{
+    width: 45vw;
+    height: 6vh;
+    border-radius: 18px;
+    border: 1px solid rgb(219, 212, 212);
+    padding-left: 30px;
+}
+.invalid_ki_info{
+    display: block;
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    display: none;
+}
+
+#Section-1{
+    height: 60vh;
+    width: 100%;
+    /* border: 2px solid black; */
+    position: relative;
+}
+#Section-1 .weather{
+    height: 60vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    /* background-image: url(ClearWeatherMain.webp);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.weather img{
+    height: 60vh;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.45;
+}
+.weathercontent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    font-weight: bolder;
+}
+#city{
+    padding-left: 18px;
+}
+.line1{
+    width: 35vw;
+    height: 13vh;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.line1 img{
+    height: 12vh;
+    width: 6vw;
+}
+#weatherdesc{
+    font-size: 33px;
+}
+.line2{
+    height: 4vh;
+    width: 90vw;
+    /* border: 1px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 18px;
+    font-weight: 300;
+}
+.box{
+    font-size: 24px;
+    font-family: 'Crimson Text', serif;
+}
+
+
+#Section-2{
+    width: 100%;
+    height: 45vh;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(3,22vw);
+    justify-content: center;
+    column-gap: 8vw;
+    margin-top: 50px;
+}
+.card{
+    height: 35vh;
+    width: 22vw;
+    border: 1px solid rgb(204, 199, 199);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    box-shadow: 0 2px 10px rgb(40, 40, 40);
+    
+}
+.card h2{
+    background-color: rgb(60, 60, 209, 1);
+    color: #fff;
+    width: 22vw;
+    text-align: center;
+    padding: 3px;
+    border-radius: 15px;
+}
+.card div p{
+    text-align: center;
+}
+#copyright{
+    height: 8vh;
+    font-size: 35px;
+}
+
+@media screen and (max-width: 1120px) {
+    .line1{
+        width: 37vw;
+    }
+}
+@media screen and (max-width: 1028px) {
+    .line1{
+        width: 39vw;
+    }
+}
+@media screen and (max-width: 950px) {
+    .line1{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 30vh;
+    }
+    .line2{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        height: 30vh;
+    }
+    #city{
+        padding-left: 0;
+    }
+    #Section-1, .weather, .overlay, .weathercontent, .weather img{
+        height: 90vh;
+    }
+    .weathercontent{
+        justify-content: space-between;
+    }
+    #copyright{
+        height: 12vh;
+    }
+    #Logo{
+        margin-left: 0;
+    }
+    .card{
+        height: 40vh;
+    }
+}
+@media screen and (max-width: 800px) {
+    .line1 img{
+        width: 8vw;
+    }
+}
+@media screen and (max-width: 865px) {
+    .card{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 655px) {
+    .card{
+        font-size: 10px;
+        height: 28vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .line1{
+        height: 35vh;
+    }
+    .line2{
+        height: 35vh;
+    }
+    #Section-1, .weather, .overlay, .weathercontent, .weather img{
+        height: 100vh;
+    }
+    #copyright{
+        font-size: 20px;
+    }
+    #weatherdesc{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 455px) {
+    #weatherdesc{
+        font-size: 18px;
+    }
+    .card{
+        height: 32vh;
+        width: 25vw;
+    }
+    .line1 img{
+        width: 14vw;
+    }
+}
